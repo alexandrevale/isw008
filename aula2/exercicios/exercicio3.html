@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Aula 2</title>
+		<script>
+		/*
+		Faça uma função que receba dois vetores como parâmetro.
+		Se os tamanhos forem diferentes, mostre o erro. Se forem iguais crie um novo vetor, que
+		contenha a soma dos elementos de cada veto, primeiro com primeiro, segundo com segundo...
+		*/
+			function comparaVetor(v1, v2){
+				if(v1.length !== v2.length){
+					alert("erro");
+				}else{
+					var v3 = [];
+					for(var i=0; i<v1.length; i++){
+						v3[i] = (v1[i]+v2[i]);
+						alert("A somatória do vetor1["+i+"]="+v1[i]+", com o vetor2["+i+"]="+v2[i]+" é: "+v3[i]);
+					}
+				}
+			}
+
+		</script>
+	</head>
+	<body>
+		<script>comparaVetor([4, 2],[2, 2])</script>
+	</body>
+</html>

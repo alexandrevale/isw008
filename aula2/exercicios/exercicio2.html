@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Aula 2</title>
+		<script>
+		//Hoisting
+			function	foo(){
+				x = "Olá Mundo";
+				var x;
+				alert(x);
+			}
+			function	bar(){
+				foo();
+				//alert(x);
+			}
+		</script>
+	</head>
+	<body>
+		<script>bar()</script>
+	</body>
+</html>

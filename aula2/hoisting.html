@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Aula 2</title>
+		<script>
+		/*Faça uma função que peça ao usuário o nome e idade. A função deverá mostrar
+		uma mensagem de erro caso seja vazio para o nome ou menor de 18 anos,
+		caso contrário mensagem de sucesso.
+		*/
+			function	nomeIdade(){
+				var nome = prompt("Digite seu nome: ");
+				var idade = prompt("Digite seu idade: ");
+				
+				idade = parseInt(idade);
+				if(nome === "" || idade<18){
+					alert("Erro!");
+				}else{
+					alert("Sucesso");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<script>nomeIdade()</script>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Aula 2</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			#js-resultado{
+				background-color: #F2FFE3;
+			}
+			.estudo{
+				background-color: #225378;
+				padding: 2%;
+				margin: 5%;
+				border-radius: 5px;
+			}
+			.estudo h1, p{
+				padding: 2%;
+				font-family: arial;
+				font-size: 3em;
+				margin-bottom: 2%;
+			}
+			button{
+				margin-bottom: 2%;
+				padding: 1%;
+				font-family: arial;
+				font-size: 1em;
+				border-radius: 5px;
+			}
+		</style>
+		<script>
+			var v = [];
+			function	percorrer(v){
+				for(var i=0; i<v.length; i++){
+					alert("O vetor "+i+ " é = "+v[i]);
+				}
+			}
+			function	insereFim(){
+				v.push(prompt("Digite um elemento: "));
+				document.getElementById("js-resultado").innerHTML = v;
+			}
+			function	insereInicio(){
+				v.unshift(prompt("Digite um elemento: "));
+				document.getElementById("js-resultado").innerHTML = v;
+			}
+			function	removeFim(){
+				v.pop();
+				document.getElementById("js-resultado").innerHTML = v;
+			}
+			function	removeInicio(){
+				v.shift();
+				document.getElementById("js-resultado").innerHTML = v;
+			}
+			function	sort(){
+				v.sort();
+				document.getElementById("js-resultado").innerHTML = v;
+			}
+			function	reverse(){
+				v.reverse();
+				document.getElementById("js-resultado").innerHTML = v;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="estudo">
+			<p id="js-resultado">:)</p>
+			<button onClick="insereFim()">Inserir no final</button>
+			<button onClick="insereInicio()">Inserir no inicio</button>
+			<button onClick="removeFim()">Remove no final</button>
+			<button onClick="removeInicio()">Remove no inicio</button>
+			<button onClick="sort()">Sort</button>
+			<button onClick="reverse()">Reverse</button>
+		</div>
+	</body>
+</html>
