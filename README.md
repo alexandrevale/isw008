@@ -6,6 +6,7 @@ Aulas de "Programação de Sítios Internet", do curso Sistemas para Internet, d
 <li>Apresentação do conteúdo programático;
 <li>Criando função e praticando operações básicas
 </ul>
+
 ## Aula 2
 
 ## Aula 3
@@ -20,7 +21,7 @@ Aulas de "Programação de Sítios Internet", do curso Sistemas para Internet, d
 AJAX
 ## Aula 8
 Aplicação da P1
-## AUla 9
+## Aula 9
 Correção da P1
 ## Aula 10
 <ul><li>Programação funcional <li>Funções de Alta Ordem (HOF)</ul>
