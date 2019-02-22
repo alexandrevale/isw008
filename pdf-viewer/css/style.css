@@ -21,3 +21,9 @@
 .page-info {
 	margin-left: 1rem;
 }
+
+.error {
+	background: orangered;
+	color: #fff;
+	padding: 1rem;
+}
