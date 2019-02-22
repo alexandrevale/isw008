@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.top-bar {
+	background-color: #ddd;
+	color: #fff;
+	padding: 1rem;
+}
+
+.btn {
+	background-color: coral;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: .5rem .2rem;
+}
+
+.page-info {
+	margin-left: 1rem;
+}
