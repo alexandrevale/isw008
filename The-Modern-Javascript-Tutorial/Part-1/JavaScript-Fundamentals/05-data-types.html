@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "Hello";
+        let str2 = 'Single quotes are ok too';
+        let phrase = `can embed: ${str}`;
+
+        alert(phrase);
+
+        alert( `the result is ${1 + 2}` ); // the result is 3
+
+        let isGreater = 4 > 1;
+        alert( isGreater ); // true (the comparison result is "yes")
+
+        /* null is not a “reference to a non-existing object” or a “null pointer”.
+        It represents “nothing”, “empty” or “value unknown” */
+        let age = null;
+
+        /* The meaning of undefined is “value is not assigned”.
+        If a variable is declared, but not assigned, then its value is undefined: */
+        let x;
+        alert(x); // shows "undefined"
+
+        console.log(typeof undefined) // "undefined"
+        console.log(typeof 0) // "number"
+        console.log(typeof true) // "boolean"
+        console.log(typeof "foo") // "string"
+        console.log(typeof Symbol("id")) // "symbol"
+        console.log(typeof Math) // "object"  (1)
+        console.log(typeof null) // "object"  (2)
+        console.log(typeof alert) // "function"  (3)
+
+    </script>
+</body>
+</html>
