@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        let message;
+        message = 'Hello!';
+        alert(message);
+
+        //declare multiple variables in one line
+        let user0 = 'John', age0 = 25, message0 = 'Hello';
+        alert(user0 + " " + age0 + " " + message0);
+
+        let user1 = 'Alex',
+        age1 = 30,
+        message1 = 'Hi There';
+        alert(user1 + " " + age1 + " " + message1);
+
+        let user2 = 'Jo Jo'
+        , age2 = 19
+        , message2 = '...';
+        alert(user2 + " " + age2 + " " + message2);
+
+        //In older scripts, you may also find another keyword: var instead of let:
+        var messageOld = 'Hello';
+        alert(messageOld);
+
+        /*
+        function sayHi() {
+            if (true) {
+                var phrase = "Hello";
+            }
+
+            alert(phrase); // works
+        }
+
+        sayHi();
+        alert(phrase); // Error: phrase is not defined
+
+        // There are two main differences of var:
+
+        // Variables have no block scope, they are visible minimum at the function level.
+        // Variable declarations are processed when the function starts (or script starts for globals).
+        */
+
+        // Case matters - variables named apple and AppLE are two different variables.
+        let apple = 'fruit';
+        let applE = 'IT';
+        alert(apple + ' is different then ' + applE);
+
+        const COLOR_RED = "#F00";
+        const COLOR_GREEN = "#0F0";
+        const COLOR_BLUE = "#00F";
+        const COLOR_ORANGE = "#FF7F00";
+
+        // ...when we need to pick a color
+        let color = COLOR_BLUE;
+        alert(color); // #00F
+
+    </script>
+</body>
+</html>
