@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Type Conversions</title>
+</head>
+<body>
+    <p>Open console log</p>
+    <script>
+        let value = true;
+        console.log(typeof value); // boolean
+
+        value = String(value); // now value is a string "true"
+        console.log(typeof value); // string
+
+        value = "123";
+        console.log(typeof value); // string
+
+        let num = Number(value); // becomes a number 123
+
+        console.log(typeof num); // number
+
+        // Numeric conversion rules:
+        console.log( Number("   123   ") ); // 123
+        console.log( Number("123z") );      // NaN (error reading a number at "z")
+        console.log( Number(true) );        // 1
+        console.log( Number(false) );       // 0
+
+        // Addition ‘+’ concatenates strings
+        console.log( 1 + '2' ); // '12' (string to the right)
+        console.log( '1' + 2 ); // '12' (string to the left)
+        console.log( 1 + 2 ); // '3' (number)
+
+        // ToBoolean
+        console.log( Boolean(1) ); // true
+        console.log( Boolean(0) ); // false
+
+        console.log( Boolean("hello") ); // true
+        console.log( Boolean("") ); // false
+        console.log( Boolean(" ") ); // spaces, also true (any non-empty string is true)
+
+        //Task
+        console.log(" ")
+        console.log("Task")
+        console.log( "" + 1 + 0 ) // 10
+        console.log( "" - 1 + 0 ) // -1
+        console.log( true + false ) // 1
+        console.log( 6 / "3" ) // 2
+        console.log( "2" * "3" ) // 6
+        console.log( 4 + 5 + "px" ) // 9px
+        console.log( "$" + 4 + 5 ) // $45
+        console.log( "4" - 2 ) // 2
+        console.log( "4px" - 2 ) // NaN
+        console.log( 7 / 0 ) // Infinity
+        console.log( "  -9  " + 5 ) //   -9  5
+        console.log( "  -9  " - 5 ) // -14
+        console.log( null + 1 ) // 1
+        console.log( undefined + 1 ) // NaN
+    </script>
+</body>
+</html>
